@@ -2,9 +2,22 @@ package com.company;
 
 public class Main {
     public static void main(String args[]) {
-        DistanceConverter distanceConverter = new DistanceConverter(5,100);
+        CurrencyConverter currencyConverter = new CurrencyConverter(2, 8, 100, 10);
 
-        distanceConverter.convertMilesToMeters();
-        distanceConverter.convertMetersToMiles();
+        currencyConverter.convertDollarToEuro();
+        currencyConverter.convertDollarToDram();
+        currencyConverter.convertDollarToRuble();
+
+        currencyConverter.convertEuroToDollar();
+        currencyConverter.convertEuroToDram();
+        currencyConverter.convertEuroToRuble();
+
+        currencyConverter.convertDramToDollar();
+        currencyConverter.convertDramToEuro();
+        currencyConverter.convertDramToRuble();
+
+        currencyConverter.convertRubleToDollar();
+        currencyConverter.convertRubleToEuro();
+        currencyConverter.convertRubleToDram();
     }
 }
