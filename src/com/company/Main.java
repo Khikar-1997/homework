@@ -2,9 +2,14 @@ package com.company;
 
 public class Main {
     public static void main(String args[]) {
-        Point point = new Point(0, 5);
+        TemperatureConverter temperatureConverter = new TemperatureConverter(10, 15, 18);
+        temperatureConverter.convertFarenheitToCelsius();
+        temperatureConverter.convertFarenheitToKelvin();
 
-        point.cordinantsDistance();
-        point.cordinantPointOneDistanceFromPointTwo(5, 0);
+        temperatureConverter.convertCelsiusToFarenheit();
+        temperatureConverter.convertCelsiusToKelvin();
+
+        temperatureConverter.convertKelvinToCelsius();
+        temperatureConverter.convertKelvinToFarenheit();
     }
 }
